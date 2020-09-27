@@ -7,11 +7,11 @@ function templateHTML(title, list, body){
   <!doctype html>
   <html>
   <head>
-    <title>WEB1 - ${title}</title>
+    <title>izone - ${title}</title>
     <meta charset="utf-8">
   </head>
   <body>
-    <h1><a href="/">WEB</a></h1>
+    <h1><a href="/">IZONE</a></h1>
     ${list}
     ${body}
   </body>
@@ -38,7 +38,7 @@ var app = http.createServer(function(request,response){
  
         fs.readdir('d:/NodeJsFolder/Node.js_Practice/MyWorkPlace/data/', function(error, filelist){
           var title = 'Welcome';
-          var description = 'Hello, Node.js';
+          var description = 'Hello, WIZ*ONE';
           var list = templateList(filelist);
           var template = templateHTML(title, list, `<h2>${title}</h2>${description}`);
           response.writeHead(200);
